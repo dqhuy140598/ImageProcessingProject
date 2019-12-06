@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fca4b022-58d3-4bc5-9615-bafbe377cba5" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="fca4b022-58d3-4bc5-9615-bafbe377cba5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/huydao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cnn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/image_processor.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/sudoku.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keras_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/preprocess_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pretrained/model.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pretrained/validdatagen.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudoku.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ImageProcessing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ImageProcessing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,20 +32,37 @@
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1U7WrDmRrlUMfQBF1Jlm9yZSxs0" />
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ProjectId" id="1U7WrDmRrlUMfQBF1Jlm9yZSxs0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pretrained" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pretrained" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -42,11 +76,52 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574708311093</updated>
-      <workItem from="1574708313958" duration="639000" />
+      <workItem from="1574708313958" duration="840000" />
+      <workItem from="1574776230208" duration="8000" />
+      <workItem from="1575400829296" duration="162000" />
+      <workItem from="1575400999916" duration="5411000" />
+      <workItem from="1575406414779" duration="8739000" />
+      <workItem from="1575457234069" duration="28000" />
+      <workItem from="1575489636321" duration="3323000" />
+      <workItem from="1575492968310" duration="4115000" />
+      <workItem from="1575540061069" duration="8810000" />
+      <workItem from="1575551422604" duration="5589000" />
+      <workItem from="1575623099414" duration="13718000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="730" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575638087555">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="730" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1575638087555" />
+    <state x="486" y="174" key="SettingsEditor" timestamp="1575493305902">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="486" y="174" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1575493305902" />
+    <state x="653" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1575623102500">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="653" y="367" key="com.intellij.ide.util.TipDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1575623102500" />
+    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1575627757522">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1575627757522" />
   </component>
 </project>
