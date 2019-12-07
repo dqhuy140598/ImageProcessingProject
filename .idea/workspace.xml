@@ -2,23 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fca4b022-58d3-4bc5-9615-bafbe377cba5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/huydao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cnn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/image_processor.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/sudoku.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keras_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/preprocess_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pretrained/model.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pretrained/validdatagen.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sudoku.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ImageProcessing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ImageProcessing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/display/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/display/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/display/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/display/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/display/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/display/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/display/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/display/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/display/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test7.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sudoku_solver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/keras_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/keras_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,11 +49,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pretrained" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/display" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/display" />
+      <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/pretrained" />
     </key>
   </component>
@@ -86,7 +94,11 @@
       <workItem from="1575492968310" duration="4115000" />
       <workItem from="1575540061069" duration="8810000" />
       <workItem from="1575551422604" duration="5589000" />
-      <workItem from="1575623099414" duration="13718000" />
+      <workItem from="1575623099414" duration="13848000" />
+      <workItem from="1575640289424" duration="344000" />
+      <workItem from="1575665643148" duration="2580000" />
+      <workItem from="1575737375167" duration="355000" />
+      <workItem from="1575737772024" duration="9013000" />
     </task>
     <servers />
   </component>
@@ -107,18 +119,22 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="730" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575638087555">
+    <state x="693" y="344" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1575747023174">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="730" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1575638087555" />
-    <state x="486" y="174" key="SettingsEditor" timestamp="1575493305902">
+    <state x="693" y="344" key="#com.intellij.fileTypes.FileTypeChooser/65.24.1855.1056@65.24.1855.1056" timestamp="1575747023174" />
+    <state x="730" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575740837518">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="486" y="174" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1575493305902" />
-    <state x="653" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1575623102500">
+    <state x="730" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1575740837518" />
+    <state x="750" y="217" key="SettingsEditor" timestamp="1575749662143">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="653" y="367" key="com.intellij.ide.util.TipDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1575623102500" />
+    <state x="750" y="217" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1575749662143" />
+    <state x="653" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1575737375181">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="653" y="367" key="com.intellij.ide.util.TipDialog/65.24.1855.1056@65.24.1855.1056" timestamp="1575737375181" />
     <state x="655" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1575627757522">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>

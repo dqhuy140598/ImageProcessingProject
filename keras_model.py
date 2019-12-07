@@ -19,15 +19,18 @@ def getvaliddatagen(validata_path):
     return validdatagen
 
 
-def predict_images(image,model,validdatagen):
-    image = np.expand_dims(image, axis=-1).astype(np.float32)/255.0
+def predict_images(image_dict,model,validdatagen):
+    keys = list(image_dict.keys())
+    values = list(image_dict.values())
+    values = np.array(values)
+    image = np.expand_dims(values, axis=-1).astype(np.float32)/255.0
     results = model.predict_generator(
         validdatagen.flow(image,batch_size=len(image),shuffle=False),
         steps=1
     )
     y_pred = np.argmax(results, axis=-1)
-    print(y_pred)
-    return y_pred
+    result_dict = dict(zip(keys,y_pred))
+    return result_dict
 
 
 if __name__ == '__main__':

@@ -8,11 +8,11 @@ import cv2
 import time
 from cnn import predict_on_images
 import numpy as np
+from sudoku_solver import solve_sudoku
 from keras_model import loadmodel,getvaliddatagen,predict_images
 logging.basicConfig(level=logging.INFO)
 model = loadmodel("pretrained/model.pkl")
 validata = getvaliddatagen('pretrained/validdatagen.pkl')
-
 class Sudoku:
 
     def __init__(self,sudoku_config,preprocess_config):
@@ -99,9 +99,11 @@ class Sudoku:
         # print('thong tin: ',stats)
         if stats_width > 0.7 * w or stats_height > 0.7 * h:
             return False
-        if stats_width < 7 or stats_height < 0.1 * h:
+        if stats_width < 4 or stats_height < 0.1 * h:
             return False
-        if stats_area < 0.015 * w * h:
+        if start_left < 0.05 * w:
+            return False
+        if stats_area < 0.04 * w * h:
             return False
         return True
 
@@ -112,6 +114,7 @@ class Sudoku:
         @return: the mask of the digit
         """
         image_copy = digit_roi.copy()
+        # plot_image(image_copy,'roi')
         h,w = image_copy.shape[:2]
         binary_image = self.image_processor.convert_to_binary(image_copy)
         # print(np.unique(binary_image))
@@ -133,6 +136,7 @@ class Sudoku:
         if target_label is not None:
             mask[label==target_label] = 255
             mask = self.image_processor.apply_morphological_op(mask,op='close')
+            # mask = self.image_processor.apply_morphological_op(mask, op='open')
             # plot_image(mask,'label')
         return mask,target_label
 
@@ -218,32 +222,42 @@ class Sudoku:
         grayscale = self.image_processor.convert_to_grayscale(image_copy)
         crop_rect = self.get_coordinates_of_largest_contour(image_copy)
         sudoku_roi = self.crop_and_wrap_sudoku_roi(grayscale,crop_rect)
+        plot_image(sudoku_roi,'roi')
         squares = self.get_digit_coordinates_from_sudoku_roi(sudoku_roi)
         mask_digits = []
         labels = []
+        mask_dict = dict()
         for i in range(len(squares)):
-            mask,target_label = self.extract_one_digit(sudoku_roi,squares[i],10)
+            mask,target_label = self.extract_one_digit(sudoku_roi,squares[i])
             labels.append(target_label)
             if target_label is not None:
                 mask = self.__pad_to_central(mask)
                 mask_digits.append(mask)
-        mask_digits = [cv2.resize(x,(28,28)) for x in mask_digits]
-        mask_digits = np.array(mask_digits)
-        predict_images(mask_digits,model,validata)
-
+                mask_dict[str(i)] = mask
+        map = np.zeros(shape=(1, 81))
+        if len(mask_digits) > 0:
+            mask_dict = {k:cv2.resize(x,(28,28)) for k,x in mask_dict.items()}
+            # plot_images(mask_digits,'digits')
+            mask_digits = np.array(mask_digits)
+            result_dict = predict_images(mask_dict,model,validata)
+            for k,v in result_dict.items():
+                map[0][int(k)] = v
+        map = map.reshape(9,9)
+        can_solve = solve_sudoku(map)
+        if can_solve:
+            print(map)
+            display_solution(map)
+        else:
+            print("no solution")
 
 if __name__ == '__main__':
-    image_path = 'data/test.jpeg'
+    image_path = 'data/test3.png'
     image_processor_config_path = 'config/image_processor.json'
     sudoku_config_path = 'config/sudoku.json'
     image = load_image(image_path, gray_scale=False)
     image_processor_config = parse_json(image_processor_config_path)
     sudoku_config = parse_json(sudoku_config_path)
     sudoku = Sudoku(preprocess_config=image_processor_config, sudoku_config=sudoku_config)
-    start = time.time()
     sudoku.run_pipeline(image)
-    end = time.time() - start
-    print(end)
-
 
 

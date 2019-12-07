@@ -5,3 +5,5 @@ torch
 torchvision
 keras
 tensorflow==1.14.0
+fuzzywuzzy
+numpy_ringbuffer
